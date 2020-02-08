@@ -55,6 +55,12 @@ function handleMessageEvent(event) {
             text: 'ดีจ้า'
         };
     }
+    else (eventText === 'day'){
+        var msg = {
+            type: 'text',
+            text: 'Daysอะไรก็ไม่รู้'
+        };
+    }
 
     return client.replyMessage(event.replyToken, msg);
 }
