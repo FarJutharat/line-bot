@@ -55,7 +55,7 @@ function handleMessageEvent(event) {
             text: 'ดีจ้า'
         };
     }
-    else (eventText === 'day'){
+    else if(eventText === 'day'){
         var msg = {
             type: 'text',
             text: 'Daysอะไรก็ไม่รู้'
