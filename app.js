@@ -49,7 +49,7 @@ function handleMessageEvent(event) {
         };
     }
 
-    var eventText = event.message.text.toLowerCase();
+   // var eventText = event.message.text.toLowerCase();
 
     if(eventText === 'hi'){
         var msg = {
