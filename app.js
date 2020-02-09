@@ -42,10 +42,12 @@ function handleEvent(event) {
 }
 
 function handleMessageEvent(event) {
-    var msg = {
-        type: 'text',
-        text: 'สวัสดีครัช'
-    };
+    if(eventText == 'น้องผ่อง') {
+        var msg = {
+            type: 'text',
+            text: 'สวัสดีครัช'
+        };
+    }
 
     var eventText = event.message.text.toLowerCase();
 
@@ -61,6 +63,7 @@ function handleMessageEvent(event) {
             text: 'Daysอะไรก็ไม่รู้'
         };
     }
+
 
     return client.replyMessage(event.replyToken, msg);
 }
