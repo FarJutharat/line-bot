@@ -42,17 +42,13 @@ function handleEvent(event) {
 }
 
 function handleMessageEvent(event) {
-
-   // var eventText = event.message.text.toLowerCase();
-
-    if(eventText == 'น้องผ่อง') {
         var msg = {
             type: 'text',
-            text: 'สวัสดีครัช'
+            text: 'ผ่องเอง'
         };
-    }
 
-   // var eventText = event.message.text.toLowerCase();
+
+   var eventText = event.message.text.toLowerCase();
 
     if(eventText === 'hi'){
         var msg = {
