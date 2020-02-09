@@ -43,7 +43,7 @@ function handleEvent(event) {
 
 function handleMessageEvent(event) {
 
-    var eventText = event.message.text.toLowerCase();
+   // var eventText = event.message.text.toLowerCase();
 
     if(eventText == 'น้องผ่อง') {
         var msg = {
@@ -67,7 +67,7 @@ function handleMessageEvent(event) {
         };
     }
 
-    else if(eventText === 'หิวอ่ะ','หิว'){
+    else if(eventText === 'หิวอ่ะ'){
         var msg = {
             type: 'text',
             text: 'ก็ไปหาไรแดกสิ'
